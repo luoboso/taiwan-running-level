@@ -69,7 +69,7 @@ body {
 }
 
 .contextMenu {
-  width: 180px;
+  width: 80px;
   background: #fff;
   border: 1px solid #777;
   border-radius: 5px;
@@ -113,23 +113,23 @@ body {
 }
 
 .red-border {
-  border-right: 3px solid #FF7A7A;
+  border-right: 10px solid #F23225;
 }
 
 .yellow-border {
-  border-right: 3px solid #F5A623;
+  border-right: 10px solid #FAB229;
 }
 
 .green-border {
-  border-right: 3px solid #88B14B;
+  border-right: 10px solid #ACE229;
 }
 
 .blue-border {
-  border-right: 3px solid #27BBEE;
+  border-right: 10px solid #229DEC;
 }
 
 .white-border {
-  border-right: 3px solid #fff;
+  border-right: 10px solid #FFFFFF;
 }
 
 .lockedMenu {
