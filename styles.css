@@ -18,7 +18,6 @@ body {
 .default {
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,7 +135,6 @@ body {
   position: fixed;
   right: 20px;
   top: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -158,11 +156,9 @@ body {
   border-radius: 5px;
   margin: 0;
   padding: 0;
-
   background: #fff;
   font-size: 14px;
   color: #333;
-
   cursor: pointer;
   outline: none;
 }
@@ -175,11 +171,9 @@ body {
   width: 100%;
   height: 22px;
   background: #555;
-
   position: fixed;
   left: 0;
   bottom: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,8 +184,9 @@ a#ref {
   color: #fff;
 }
 
-.github {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
+.icon {
+  width: 28px;
+  height: 32px;
+  fill: #b23225;
+  background-color:#fff
 }
