@@ -66,7 +66,7 @@
     var svgString = new XMLSerializer().serializeToString(document.querySelector('#map'));
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext("2d");
-    canvas.width = 750;
+    canvas.width = 1124;
     canvas.height = 1124;
     canvg(canvas, svgString);
     canvas.toBlob(function (blob) { saveAs(blob, 'taiwan.png'); });
