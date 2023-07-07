@@ -68,7 +68,7 @@ body {
 }
 
 .contextMenu {
-  width: 80px;
+  width: 100px;
   background: #fff;
   border: 1px solid #777;
   border-radius: 5px;
@@ -124,11 +124,15 @@ body {
 }
 
 .lv1-border {
+  border-right: 10px solid #FCF229;
+}
+
+.lv0-border {
   border-right: 10px solid #ACE229;
 }
 
-.lvo-border {
-  border-right: 10px solid #FFFFFF;
+.lv-1-border {
+  border-right: 10px solid #292929;
 }
 
 .lockedMenu {
