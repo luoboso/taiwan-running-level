@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta property="og:title" content="跑步等級台灣版" />
+    <meta property="og:title" content="跑步溫度計" />
     <meta property="og:description" content="你在跑步的哪些地方跑過呢？" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <title>跑步等級台灣版</title>
+    <title>跑步溫度計 🌡️</title>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.14.0/js/canvas-to-blob.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
@@ -25,16 +25,16 @@
       <div class="row menuItem menuTitle">
         <p id="menuTitle"></p>
       </div>
-      <div id="lv4" class="row menuItem menuButton red-border">
+      <div id="lv4" class="row menuItem menuButton lv4-border">
         <p>全馬×5</p>
       </div>
-      <div id="lv3" class="row menuItem menuButton yellow-border">
+      <div id="lv3" class="row menuItem menuButton lv3-border">
         <p>全馬</p>
       </div>
-      <div id="lv2" class="row menuItem menuButton green-border">
+      <div id="lv2" class="row menuItem menuButton lv2-border">
         <p>半馬</p>
       </div>
-      <div id="lv1" class="row menuItem menuButton blue-border">
+      <div id="lv1" class="row menuItem menuButton lv1-border">
         <p>路跑</p>
       </div>
       <div id="lv0" class="row menuItem menuButton">
@@ -63,7 +63,8 @@
       </g>
       </svg>
       </a>
-      <button id="saveAs" class="button">產生圖片</a>
+      <button id="setName" class="button">設定名字</a>
+      <button id="saveAs" class="button">儲存圖片</a>
       </div>
 
     <div class="default">
@@ -76,15 +77,15 @@
           .st0{fill:#ABCDEF;}
           .st1{fill:#FFFFFF;}
           .st2{fill:#333333;}
-          .st3{font-family:"Microsoft JhengHei";}
-          .st4{font-size:52.1035px;}
+          .st3{font-family:"Noto Sans TC", "Microsoft JhengHei";font-weight:bolder}
+          .st4{font-size:48px;}
           .st5{font-size:72px;font-weight:bolder}
           .st6{font-size:20px;}
-          .st7{fill:#F23225;}
-          .st8{fill:#FAB229;}
-          .st9{fill:#ACE229;}
-          .st10{fill:#229DEC;}
-          .st11{fill:#FFFFFF;stroke:#555555;stroke-miterlimit:10;}
+          .lv4{fill:#F229EE;}
+          .lv3{fill:#F23225;}
+          .lv2{fill:#FAB229;}
+          .lv1{fill:#ACE229;}
+          .lv0{fill:#FFFFFF;stroke:#555555;stroke-miterlimit:10;}
           .st12{fill:#555555;}
           .st13{fill:#FFFFFF;stroke:#333333;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
           .st14{fill:#FFFFFF;stroke:#333333;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -95,9 +96,12 @@
         <rect x="-0.2" y="0" class="st0" width="750.2" height="1124"/>
         <path class="st1" d="M719,1102H28c-2.8,0-5-2.2-5-5v-55.3c0-2.8,2.2-5,5-5h691c2.8,0,5,2.2,5,5v55.3C724,1099.8,721.8,1102,719,1102
           z"/>
-        <text transform="matrix(1 0 0 1 46.5859 91.9209)"><tspan x="0" y="0" class="st2 st3 st4">🏃跑步等級 </tspan><tspan id="total" x="282.9" y="0" class="st2 st3 st5">0</tspan></text>
+        <text transform="matrix(1 0 0 1 46.5859 91.9209)">
+        <tspan x="0" y="0" class="st2 st3 st4">🌡️ 跑步溫度計 </tspan>
+        <tspan x="51" y="58" id="name" class="city st3 st4">☁️⛅🌦️🌤️🌞</tspan>
+        <tspan id="total" x="304" y="0" class="st2 st3 st5">0</tspan></text>
         <text transform="matrix(1 0 0 1 104.6665 1075.2633)" class="st2 st3 st6">全馬×5</text>
-        <circle class="st7" cx="69.3" cy="1069.3" r="19"/>
+        <circle class="lv4" cx="69.3" cy="1069.3" r="19"/>
         <g>
           <path class="st1" d="M70.6,1076.2v-2.1h-5.8c-0.7,0-1.3-0.2-1.6-0.5c-0.4-0.3-0.5-0.8-0.5-1.3c0-0.1,0-0.3,0.1-0.4
             c0.1-0.1,0.1-0.3,0.2-0.5c0.1-0.2,0.2-0.3,0.3-0.5s0.3-0.3,0.4-0.6l6.1-8.1c0.4-0.5,0.7-0.9,1-1.2c0.3-0.2,0.6-0.4,0.9-0.4
@@ -106,7 +110,7 @@
             v-6.7L65.7,1071.5z"/>
         </g>
         <text transform="matrix(1 0 0 1 233.336 1075.2623)" class="st2 st3 st6">全馬</text>
-        <circle class="st8" cx="199" cy="1069.3" r="19"/>
+        <circle class="lv3" cx="199" cy="1069.3" r="19"/>
         <g>
           <path class="st1" d="M198.4,1067.4c0.7,0,1.3-0.2,1.8-0.6s0.8-1,0.8-1.8c0-0.6-0.2-1.1-0.6-1.5c-0.4-0.4-1-0.6-1.6-0.6
             c-0.5,0-0.9,0.1-1.2,0.2s-0.5,0.3-0.7,0.5s-0.3,0.5-0.5,0.8c-0.2,0.3-0.3,0.7-0.4,1c-0.1,0.2-0.2,0.3-0.4,0.4s-0.4,0.1-0.7,0.1
@@ -120,7 +124,7 @@
             c-0.2-0.2-0.3-0.5-0.3-0.9c0-0.4,0.1-0.7,0.4-0.9c0.3-0.2,0.7-0.3,1.2-0.3H198.4z"/>
         </g>
         <text transform="matrix(1 0 0 1 362.0052 1075.2633)" class="st2 st3 st6">半馬</text>
-        <circle class="st9" cx="328.7" cy="1069.3" r="19"/>
+        <circle class="lv2" cx="328.7" cy="1069.3" r="19"/>
         <g>
           <path class="st1" d="M326.7,1075h6c0.6,0,1.1,0.1,1.4,0.4s0.5,0.6,0.5,1c0,0.4-0.1,0.7-0.4,1s-0.6,0.4-1.1,0.4h-8.4
             c-0.6,0-1-0.2-1.3-0.5c-0.3-0.3-0.5-0.7-0.5-1.1c0-0.3,0.1-0.6,0.3-1.1c0.2-0.5,0.4-0.8,0.7-1.1c1-1.1,1.9-2,2.8-2.7
@@ -132,7 +136,7 @@
             C327.1,1074.5,326.9,1074.7,326.7,1075z"/>
         </g>
         <text transform="matrix(1 0 0 1 490.6747 1075.2633)" class="st2 st3 st6">路跑</text>
-        <circle class="st10" cx="458.3" cy="1069.3" r="19"/>
+        <circle class="lv1" cx="458.3" cy="1069.3" r="19"/>
         <g>
           <path class="st1" d="M457.3,1076v-10.4c-1.9,1.5-3.2,2.2-3.9,2.2c-0.3,0-0.6-0.1-0.9-0.4c-0.2-0.3-0.4-0.6-0.4-0.9
             c0-0.4,0.1-0.7,0.4-0.9c0.2-0.2,0.7-0.4,1.3-0.7c0.9-0.4,1.7-0.9,2.2-1.4c0.6-0.5,1-1,1.5-1.6c0.4-0.6,0.7-1,0.8-1.1
@@ -140,7 +144,7 @@
             C457.5,1077.1,457.3,1076.6,457.3,1076z"/>
         </g>
         <text transform="matrix(1 0 0 1 619.3439 1075.2633)" class="st2 st3 st6">沒跑過</text>
-        <circle class="st11" cx="588" cy="1069.3" r="19"/>
+        <circle class="lv0" cx="588" cy="1069.3" r="19"/>
         <g>
           <path class="st12" d="M593.9,1069.4c0,1.3-0.1,2.3-0.2,3.2s-0.4,1.7-0.8,2.5c-0.5,0.9-1.2,1.6-2,2.1s-1.7,0.7-2.8,0.7
             c-1.2,0-2.2-0.3-3.1-1c-0.9-0.7-1.6-1.6-2.1-2.7c-0.2-0.6-0.4-1.3-0.5-2.1c-0.1-0.8-0.2-1.6-0.2-2.5c0-1.2,0.1-2.2,0.2-3.1
@@ -202,7 +206,9 @@
       </div>
       <div class="bottomBar">
         <a id="ref" href="https://zhung.com.tw/japanex/" target="_blank">Refer To Japanex</a>&nbsp&nbsp|&nbsp&nbsp
-        <a id="ref" href="https://travel.tonypai.com.tw/" target="_blank">Refer To tonypai</a>
+        <a id="ref" href="https://travel.tonypai.com.tw/" target="_blank">Refer To tonypai</a>&nbsp&nbsp|&nbsp&nbsp
+        <a id="ref" href="https://www.facebook.com/jybsbj4/" target="_blank">保持心情愉快</a>&nbsp&nbsp|&nbsp&nbsp
+        <a id="ref" href="https://luoboso.github.io/taiwan-running-scouter/" target="_blank">保持身體健康</a>
       </div>
       </a>
     </div>
